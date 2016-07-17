@@ -1,0 +1,1 @@
+Copyright 2016 Brackeys, Asbjørn Thirslund.
