@@ -27,7 +27,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_CameraTargetRot = camera.localRotation;
         }
 
-
         public void LookRotation(Transform character, Transform camera)
         {
             float yRot = CrossPlatformInputManager.GetAxis("Mouse X") * XSensitivity;
@@ -52,8 +51,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 camera.localRotation = m_CameraTargetRot;
             }
 
-            UpdateCursorLock();
-        }
+			UpdateCursorLock();
+		}
 
         public void SetCursorLock(bool value)
         {
@@ -67,8 +66,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         public void UpdateCursorLock()
         {
-            //if the user set "lockCursor" we check & properly lock the cursos
-            if (lockCursor)
+			//if the user set "lockCursor" we check & properly lock the cursos
+			if (lockCursor)
                 InternalLockUpdate();
         }
 
